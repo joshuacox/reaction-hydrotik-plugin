@@ -4,8 +4,4 @@ import { Logger } from "/client/api";
 
 // Session.set("DEFAULT_LAYOUT", "coreLayout");
 
-Session.set("INDEX_OPTIONS", {
-  template: "productsLandingIndex"
-});
-
-Template.layoutHeaderHydrotik.replaces("layoutHeader");
+Template.layoutHeaderLL.replaces("layoutHeader");

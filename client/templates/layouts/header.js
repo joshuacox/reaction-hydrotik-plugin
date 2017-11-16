@@ -7,7 +7,7 @@ const NavBar = getComponent("NavBar");
 /**
  * layoutHeader events
  */
-Template.layoutHeaderHydrotik.events({
+Template.layoutHeaderLL.events({
   "click .navbar-accounts .dropdown-toggle": function () {
     return setTimeout(function () {
       return $("#login-email").focus();
@@ -18,7 +18,7 @@ Template.layoutHeaderHydrotik.events({
   }
 });
 
-Template.layoutHeaderHydrotik.helpers({
+Template.layoutHeaderLL.helpers({
   NavBar() {
     return NavBar;
   },

@@ -4,6 +4,8 @@ import { Components, replaceComponent } from "@reactioncommerce/reaction-compone
 import Blaze from "meteor/gadicc:blaze-react-component";
 import { Template } from "meteor/templating";
 
+import LogoContainer from "../llc/LogoContainer";
+
 const CoreLayoutLL = ({ actionViewIsOpen, structure }) => {
   const { layoutFooter, template } = structure || {};
 
@@ -14,12 +16,8 @@ const CoreLayoutLL = ({ actionViewIsOpen, structure }) => {
 
   return (
     <div className={pageClassName} id="reactionAppContainer">
-      <div id="logo" className="clearfix">
-        <a href="https://leahlovise.com//" title="Leah Lovise" rel="home">
-          <img src="images/leahlovise-logo-xs.png" alt=""></img>
-        </a>
-      </div>
 
+      <LogoContainer />
       <Components.NavBar />
 
       <Blaze template="cartDrawer" className="reaction-cart-drawer" />

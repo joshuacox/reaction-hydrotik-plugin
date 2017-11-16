@@ -8,7 +8,7 @@ import {
 
 const NavBar = getRawComponent("NavBar");
 
-class NavBarHydrotik extends NavBar {
+class NavBarLL extends NavBar {
   render() {
     return (
       <div className="rui navbar">
@@ -25,5 +25,5 @@ class NavBarHydrotik extends NavBar {
   }
 }
 
-replaceComponent("NavBar", copyHOCs("NavBar", NavBarHydrotik));
+replaceComponent("NavBar", copyHOCs("NavBar", NavBarLL));
 

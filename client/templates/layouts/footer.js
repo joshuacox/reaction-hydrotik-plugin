@@ -2,7 +2,7 @@ import { Reaction } from "/client/api";
 import { Media, Shops, Packages } from "/lib/collections";
 import { merge } from "lodash";
 
-Template.layoutFooterHydrotik.onCreated(function () {
+Template.layoutFooterLL.onCreated(function () {
   this.settings = ReactiveVar();
 
   // Initialize settings value for footer
@@ -35,7 +35,7 @@ Template.layoutFooterHydrotik.onCreated(function () {
   });
 });
 
-Template.layoutFooterHydrotik.helpers({
+Template.layoutFooterLL.helpers({
   settings: function () {
     //const template = Template.instance();
     //return template && template.socialSettings;
