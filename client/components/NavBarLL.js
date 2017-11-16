@@ -26,3 +26,4 @@ class NavBarHydrotik extends NavBar {
 }
 
 replaceComponent("NavBar", copyHOCs("NavBar", NavBarHydrotik));
+
