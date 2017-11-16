@@ -5,9 +5,10 @@ import Blaze from "meteor/gadicc:blaze-react-component";
 import { Template } from "meteor/templating";
 
 import LogoContainer from "../llc/LogoContainer";
+import FooterContainer from "../llc/FooterContainer";
 
 const CoreLayoutLL = ({ actionViewIsOpen, structure }) => {
-  const { layoutFooter, template } = structure || {};
+  const { layoutFooterLL, template } = structure || {};
 
   const pageClassName = classnames({
     "page": true,
@@ -28,9 +29,10 @@ const CoreLayoutLL = ({ actionViewIsOpen, structure }) => {
       </main>
       }
 
-      { Template[layoutFooter] &&
-      <Blaze template={layoutFooter} />
+      { Template[layoutFooterLL] &&
+      <Blaze template={layoutFooterLL} />
       }
+      <FooterContainer />
     </div>
   );
 };
